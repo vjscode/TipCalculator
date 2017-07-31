@@ -10,16 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBOutlet weak var total: UILabel!
+    @IBOutlet weak var tipField: UILabel!
+    @IBOutlet weak var bill: UITextField!
+    @IBOutlet weak var tipPercentChooser: UISegmentedControl!
+    let tipPercentages = [0.18, 0.20, 0.25]
+    
+    @IBAction func onTapOutside(_ sender: Any) {
+        view.endEditing(true)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func updateTotalBill(_ sender: Any) {
+        let bill = Double(self.bill.text!) ?? 0
+        let tip = bill * self.tipPercentages[tipPercentChooser.selectedSegmentIndex]
+        let total = bill + tip
+        self.tipField.text = "$\(tip)"
+        self.total.text = "$\(total)"
     }
-
-
 }
 

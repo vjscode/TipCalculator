@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9564887D1F2E5BF600C47F43 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9564887C1F2E5BF600C47F43 /* KeyboardLayoutConstraint.swift */; };
 		9592E4A01F2D7210005000E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9592E49F1F2D7210005000E5 /* AppDelegate.swift */; };
 		9592E4A21F2D7210005000E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9592E4A11F2D7210005000E5 /* ViewController.swift */; };
 		9592E4A51F2D7210005000E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9592E4A31F2D7210005000E5 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9564887C1F2E5BF600C47F43 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
 		9592E49C1F2D7210005000E5 /* Tip Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tip Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9592E49F1F2D7210005000E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9592E4A11F2D7210005000E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				9592E4A61F2D7211005000E5 /* Assets.xcassets */,
 				9592E4A81F2D7211005000E5 /* LaunchScreen.storyboard */,
 				9592E4AB1F2D7211005000E5 /* Info.plist */,
+				9564887C1F2E5BF600C47F43 /* KeyboardLayoutConstraint.swift */,
 			);
 			path = "Tip Calculator";
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				9592E4A21F2D7210005000E5 /* ViewController.swift in Sources */,
 				9592E4A01F2D7210005000E5 /* AppDelegate.swift in Sources */,
+				9564887D1F2E5BF600C47F43 /* KeyboardLayoutConstraint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +511,7 @@
 				9592E4C61F2D7211005000E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9592E4C71F2D7211005000E5 /* Build configuration list for PBXNativeTarget "Tip CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +520,7 @@
 				9592E4C91F2D7211005000E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9592E4CA1F2D7211005000E5 /* Build configuration list for PBXNativeTarget "Tip CalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +529,7 @@
 				9592E4CC1F2D7211005000E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
