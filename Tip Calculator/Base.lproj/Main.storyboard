@@ -116,7 +116,13 @@
                             <outletCollection property="gestureRecognizers" destination="tz1-E9-P7r" appends="YES" id="tyc-wF-ZSo"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Tip Calculator" id="3Ep-mq-1DO"/>
+                    <navigationItem key="navigationItem" title="Tip Calculator" id="3Ep-mq-1DO">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="XXV-Kd-3Xc">
+                            <connections>
+                                <segue destination="h2w-4D-98l" kind="show" id="iJD-oS-O4L"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="bill" destination="82L-Zc-kMx" id="JG2-Rc-a05"/>
                         <outlet property="tipField" destination="1KS-3l-Wnu" id="otr-aW-a0c"/>
@@ -132,6 +138,48 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1132.5" y="136.26760563380282"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="xix-bQ-1vF">
+            <objects>
+                <viewController id="h2w-4D-98l" customClass="SettingsViewController" customModule="Tip_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4DA-ZQ-94J"/>
+                        <viewControllerLayoutGuide type="bottom" id="5J7-gP-lBy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LEA-JL-wK1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select default Tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSG-nV-lca">
+                                <rect key="frame" x="16" y="156" width="135" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dBT-a0-zdv">
+                                <rect key="frame" x="180" y="152" width="124" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Ap-mh-Btx">
+                                <rect key="frame" x="147" y="172" width="157" height="182"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="tipPicker" destination="0Ap-mh-Btx" id="Ded-cA-u8l"/>
+                        <outlet property="tipSelectorTextField" destination="dBT-a0-zdv" id="Mmb-yV-NtQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jUi-g5-rlk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1946.25" y="135.21126760563379"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9Dg-Fs-TJZ">

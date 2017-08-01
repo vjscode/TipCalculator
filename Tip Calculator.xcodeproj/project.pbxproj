@@ -15,6 +15,7 @@
 		9592E4AA1F2D7211005000E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9592E4A81F2D7211005000E5 /* LaunchScreen.storyboard */; };
 		9592E4B51F2D7211005000E5 /* Tip_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9592E4B41F2D7211005000E5 /* Tip_CalculatorTests.swift */; };
 		9592E4C01F2D7211005000E5 /* Tip_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9592E4BF1F2D7211005000E5 /* Tip_CalculatorUITests.swift */; };
+		95C18A321F30335500CAB402 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C18A311F30335500CAB402 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9592E4BB1F2D7211005000E5 /* Tip CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tip CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9592E4BF1F2D7211005000E5 /* Tip_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip_CalculatorUITests.swift; sourceTree = "<group>"; };
 		9592E4C11F2D7211005000E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95C18A311F30335500CAB402 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = "Tip Calculator/SettingsViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		9592E4931F2D7210005000E5 = {
 			isa = PBXGroup;
 			children = (
+				95C18A311F30335500CAB402 /* SettingsViewController.swift */,
 				9592E49E1F2D7210005000E5 /* Tip Calculator */,
 				9592E4B31F2D7211005000E5 /* Tip CalculatorTests */,
 				9592E4BE1F2D7211005000E5 /* Tip CalculatorUITests */,
@@ -265,6 +268,7 @@
 				9592E4A21F2D7210005000E5 /* ViewController.swift in Sources */,
 				9592E4A01F2D7210005000E5 /* AppDelegate.swift in Sources */,
 				9564887D1F2E5BF600C47F43 /* KeyboardLayoutConstraint.swift in Sources */,
+				95C18A321F30335500CAB402 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
