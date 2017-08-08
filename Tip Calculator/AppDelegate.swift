@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let defaults = UserDefaults.standard
         let savedDate : NSDate = defaults.object(forKey: "app_bkg_time") as! NSDate
         let currentDate = NSDate()
-        if currentDate.timeIntervalSince(savedDate as Date) > 60 {
+        if currentDate.timeIntervalSince(savedDate as Date) > 600 {
             defaults.set(0, forKey: "bill_amount")
             defaults.synchronize()
         }
