@@ -21,7 +21,9 @@ class ViewController: UIViewController {
     var numCharsBill = 0
     
     override func viewWillAppear(_ animated: Bool) {
-        showHideTipControlsWithoutAnim(numChars: numCharsBill)
+        super.viewWillAppear(animated)
+        loadSavedBillAmount()
+        showHideTipControls(numChars: numCharsBill)
         tipPercentChooser.selectedSegmentIndex = getDefaultFromStore()
         updateTipAndTotal()
     }
@@ -38,6 +40,15 @@ class ViewController: UIViewController {
         numCharsBill = (bill.text?.characters.count)!
         showHideTipControls(numChars: numCharsBill)
     }
+    
+    func loadSavedBillAmount() {
+        let defaults = UserDefaults.standard
+        let billAmount = defaults.integer(forKey: "bill_amount")
+        if billAmount >  0 {
+            bill.text = "\(billAmount)"
+        }
+        numCharsBill = (bill.text?.characters.count)!
+    }
 
     func getDefaultFromStore() -> Int  {
         let defaults = UserDefaults.standard
@@ -50,6 +61,7 @@ class ViewController: UIViewController {
         let total = bill + tip
         self.tipField.text = "$\(tip)"
         self.total.text = "$\(total)"
+        saveBillAmount()
     }
     
     func showHideTipControlsWithoutAnim(numChars : Int) {
@@ -92,6 +104,14 @@ class ViewController: UIViewController {
         }, completion: { finished in
             view.isHidden = false
         })
+    }
+    
+    func saveBillAmount() {
+        let billAmount = (bill.text?.characters.count)!
+        if billAmount > 0 {
+            let defaults = UserDefaults.standard
+            defaults.set(bill.text, forKey: "bill_amount")
+        }
     }
 }
 
